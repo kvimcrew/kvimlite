@@ -16,7 +16,7 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {
-      ensure_installed = { "golangci-lint", "golines" },
+      ensure_installed = { "golangci-lint-langserver", "golines" },
     },
   },
   {
@@ -47,6 +47,10 @@ return {
               },
             },
           },
+        },
+        golangci_lint_ls = {
+          filetypes = { "go", "gomod" },
+          root_dir = require("lspconfig.util").root_pattern("go.mod", ".git"),
         },
       },
     },
