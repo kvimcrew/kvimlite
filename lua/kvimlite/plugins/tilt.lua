@@ -1,10 +1,10 @@
 vim.filetype.add({
-	filename = {
-		["Tiltfile"] = "bzl",
-	},
-	extension = {
-		tiltfile = "bzl",
-	},
+  filename = {
+    ["Tiltfile"] = "bzl",
+  },
+  extension = {
+    tiltfile = "bzl",
+  },
 })
 
 return {}
