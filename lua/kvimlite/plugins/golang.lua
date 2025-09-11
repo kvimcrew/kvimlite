@@ -56,4 +56,17 @@ return {
       },
     },
   },
+  {
+    "nvim-neotest/neotest",
+    opts = {
+      adapters = {
+        ["neotest-golang"] = {
+          runner = "gotestsum",
+          go_test_args = { "-v", "-timeout=60s" },
+          dap_go_enabled = true,
+          testify_enabled = true,
+        },
+      },
+    },
+  },
 }
