@@ -12,7 +12,7 @@ return {
     ft = { "jinja", "jinja2" },
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = { "djlint" },
     },

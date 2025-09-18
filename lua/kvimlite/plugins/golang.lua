@@ -14,10 +14,10 @@ end, {})
 
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       -- ensure_installed = { "golangci-lint-langserver", "golines" },
-      ensure_installed = {"golines" },
+      ensure_installed = { "golines" },
     },
   },
   {
